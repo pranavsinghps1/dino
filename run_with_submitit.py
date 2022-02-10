@@ -38,7 +38,9 @@ def parse_args():
 
 
 def get_shared_folder() -> Path:
-    user = os.getenv("USER")
+    #user = os.getenv("USER")
+    user = 'ps4364'
+    #added custom user to use easily 
     if Path("/checkpoint/").is_dir():
         p = Path(f"/checkpoint/{user}/experiments")
         p.mkdir(exist_ok=True)
